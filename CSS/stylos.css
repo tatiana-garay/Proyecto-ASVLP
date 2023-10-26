@@ -1,0 +1,356 @@
+:root{
+
+    /*Colores ....*/
+    --primary-solid: #FF3333;
+    --primary-900: rgba(255, 51, 51, 0.9);
+    --primary-500: rgba(255, 51, 51, 0.5);
+    --primary-300: rgba(255, 51, 51, 0.3);
+
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+    
+    --dark-solid: #1f1f1f ;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+
+    --dark-bg-solid: #30343F;
+    --ligth-bg-solid:#FAFAFF;
+    --ligth-font-solid: #FFFF;
+
+
+
+    /*LETRAS......*/
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /*FONT-SIZES-------*/
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /*SPACINGS-----*/
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+
+
+
+
+/*-----ESTILOS GENERALES----------*/
+
+*{
+    margin: 0px;
+    padding: opx;
+}
+
+.container, .navbar{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+.banner img{
+    width: 100%;
+    height: 160px;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+/*-----------fIN DE ESTILOS GENERALES ------------*/
+
+/*---------------INICIO HEADER-----------------------*/
+
+video {
+    /** Simulationg background-size: cover */
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+  }
+
+  
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    max-width: 300px;
+    position: relative;
+    left: -200px;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: flex-end;
+    gap: var(--spacing-20);
+    position: relative;
+    justify-content: flex-end;
+}
+
+.navbar__link{
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+    color: #FAFAFF;
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+
+.navbar__link:hover{
+    background-color: greenyellow;
+}
+
+/*----------FIN HEADER -------------*/
+
+
+
+/* --------TARJETAS-------------*/
+.div1{
+    display: flex;
+    position: relative;
+    
+    gap: 50px;
+}
+
+
+
+.card{
+    float: left;
+    width: 280px;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    background:transparent;
+    overflow: hidden;
+    margin: 6px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 300ms;
+    color: white;
+}
+.card:hover{
+    background: greenyellow;
+}
+
+.card .icon{
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0px auto;
+    transition: all 300ms;
+    position: relative;
+}
+
+.card:hover .icon{
+    font-size: 70px;
+    color: #37bcf9;
+    animation: swohIcon 300ms linear;
+}
+
+@keyframes swohIcon{
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.card .category{
+    width: 100%;
+    height: 50px;
+    font-family: "trebuchetMS";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    transition: all 300ms;
+}
+
+.card:hover .category{
+    color:  white;
+    animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory{
+    from{
+        transform: translateY(-300%);
+        color: black;
+    }
+    to{
+        transform: translateY(0%);
+        color: white;
+    }
+}
+
+.card .description{
+    text-align: center;
+    font-family: "trebuchetMS";
+    color: white;
+    font-size: 20px;
+    transition: all 300ms;
+    font-weight: 700;
+}
+
+.card:hover .description{
+    color: white;
+    animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription{
+    from{
+        transform: translateX(-300%);
+        color: black;
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+/*-----------INFORMACION----------------------*/
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    border: #1f1f1f;
+    align-items: center;
+}
+
+.informacion-content{
+    width: 690px;
+    height: 257px;
+    border-radius: 10px;
+    background: rgba(250, 250, 255, 1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    margin: 30px;
+}
+
+.informacion-img{
+    display: flex;
+    width: 680px;
+    height: 190px;
+    border-radius: 10px;
+}
+
+.informacion-title{
+    color: gray;
+    margin: 16px;
+    font-weight: 700;
+}
+
+/*-----------------INFORMACION UTIL--------------*/
+
+.title{
+    margin: 20px;
+    font-weight: 700;
+    font-family: var(--base-font);
+    font-size: var(--font-display);
+}
+
+.informacion-util{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.informacion-conte{
+   
+    width: 690px;
+    height: 257px;
+    border-radius: 10px;
+    background: rgba(250, 250, 255, 1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    margin: 30px
+}
+
+/*--------SERVICIOS-------------*/
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.servicios-content{
+    width: 700px;
+    height: 210px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 30px;
+    
+}
+
+.icon-servicios{
+    
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0px auto;
+    transition: all 300ms;
+    position: relative;
+    background: greenyellow;
+}
+
+.servicios-title{
+    margin: 10px;
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: var(--font-medium);
+}
+
+
+
+footer{
+    background-image: url(imagenes/1500x500.jpeg);
+    width: 100%;
+    
+    height: 250px;
+}
+
+footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+    color: #ddd;
+}
+
+footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+footer ul li a{
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+    color: var(--dark-bg-solid);
+}
