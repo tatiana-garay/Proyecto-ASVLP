@@ -55,12 +55,22 @@
 
 *{
     margin: 0px;
-    padding: opx;
+    padding: 0px;
 }
 
-.container, .navbar{
+.container{
     max-width: 1200px;
     margin:0 auto;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -69,46 +79,64 @@
     height: 160px;
 }
 
+
+
 ul, ol{
     list-style-type: none;
+}
+
+video{
+    width: 100%;
 }
 
 /*-----------fIN DE ESTILOS GENERALES ------------*/
 
 /*---------------INICIO HEADER-----------------------*/
 
-video {
-    /** Simulationg background-size: cover */
+/*.video {
+    /** Simulationg background-size: cover 
+    display: flex;
+    height: 20%;
     object-fit: cover;
-    height: 80%;
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     background-attachment: fixed;
-  }
+    overflow: hidden;
+    
+    
+  } */
 
-  
+header{
+        background-image: url(../imagenes/e4167885-bb41-4799-ac38-0a11704109e0.png);
+        min-width: 1024px;
+        width: 100%;
+        height: 150px;
+        margin: 0px auto;
+        overflow: hidden;
+    
+   
+    
+}
+
 
 .navbar{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.navbar__logo{
-    max-width: 300px;
-    position: relative;
-    left: -200px;
-}
+
 
 .navbar__menu{
     display: flex;
     align-items: flex-end;
+    
     gap: var(--spacing-20);
     position: relative;
     justify-content: flex-end;
-}
+} 
 
 .navbar__link{
     font-size: var(--font-medium);
@@ -116,7 +144,7 @@ video {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
-    color: #FAFAFF;
+    color: white;
     font-weight: 700;
     text-decoration: none;
     
@@ -144,15 +172,15 @@ video {
     float: left;
     width: 280px;
     height: 305px;
-    border: 1px solid #ccc;
+    border: 5px solid blue;
     box-shadow: 1px 1px 2px #ddd;
-    background:transparent;
+    background: white;
     overflow: hidden;
     margin: 6px;
     margin-top: 40px;
     cursor: pointer;
     transition: all 300ms;
-    color: white;
+    color: #1D84B5;
 }
 .card:hover{
     background: greenyellow;
@@ -192,7 +220,7 @@ video {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    color: white;
+    color: #1D84B5;
     transition: all 300ms;
 }
 
@@ -215,7 +243,7 @@ video {
 .card .description{
     text-align: center;
     font-family: "trebuchetMS";
-    color: white;
+    color: #1D84B5;
     font-size: 20px;
     transition: all 300ms;
     font-weight: 700;
@@ -241,10 +269,12 @@ video {
 .informacion{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 90px;
     border: #1f1f1f;
     align-items: center;
 }
+
+
 
 .informacion-content{
     width: 690px;
@@ -255,9 +285,9 @@ video {
     margin: 30px;
 }
 
-.informacion-img{
+.informacion-imgen{
     display: flex;
-    width: 680px;
+    width: 690px;
     height: 190px;
     border-radius: 10px;
 }
@@ -282,9 +312,17 @@ video {
     grid-template-columns: repeat(2, 1fr);
 }
 
+
+.informacion-img{
+    display: flex;
+    width: 600px;
+    height: 190px;
+    border-radius: 10px;
+}
+
 .informacion-conte{
    
-    width: 690px;
+    width: 600px;
     height: 257px;
     border-radius: 10px;
     background: rgba(250, 250, 255, 1);
@@ -299,7 +337,7 @@ video {
 }
 
 .servicios-content{
-    width: 700px;
+    width: 600px;
     height: 210px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -317,7 +355,7 @@ video {
     margin: 0px auto;
     transition: all 300ms;
     position: relative;
-    background: greenyellow;
+    background: #1D84B5;
 }
 
 .servicios-title{
@@ -329,37 +367,49 @@ video {
 
 /*----------footeer ----------------*/
 footer{
-    background-image: url(../imagenes/1500x500.jpeg);
+    background-image: url(../imagenes/e4167885-bb41-4799-ac38-0a11704109e0.png);
+    min-width: 1024px;
     width: 100%;
-    height: 250px;
+    height: 200px;
+    margin: 0px auto;
+    overflow: hidden;
 }
+
+.footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%
+}
+
 
 footer ul{
-    text-align: left;
-    margin: 20px;
-    font-size: 25px;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
+
 footer ul li{
-    margin-top: 10px;
-    padding: 5px;
-    list-style: none;
-    
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 700;
     
 }
 footer ul li a{
-    display: block;
+    display: flex;
     height: 40px;
     transition: all 300ms;
     color: white;
     font-weight: 700;
     text-decoration: none;
     margin: 10px;
+    
 }
 
 footer ul li:hover a{
     padding-left: 40px;
-    color: blue;
+    color: greenyellow;
     width: 100%;
 }
+

@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="./CSS/stylos.css">
         <title>ASVLP</title>
-        <link rel="icon" href="../proyeto-tati/imagenes/Screenshot_20231002_224558_Chrome.jpg">
+        <link rel="icon" href="./imagenes/logo.png">
         
         
     </head>
@@ -15,9 +15,15 @@
         <!---------INICIO HEADER -------------->
         <header>
             <nav class="navbar">
-                <div class="video-wrapper">
+                <div class="logo">
+                    <img src="./imagenes/logo.png" alt="">
+                </div>
+            
+               
+                
+                <!---div class="video-wrapper container">
                     <video playsinline autoplay muted loop poster="">
-                      <source src="./videos/ASVLaPlata_1682837551998988288(480P) (1).mp4" type="video/mp4">
+                      <source class="vid" src="./videos/ASVLaPlata_1682837551998988288(480P) (1).mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                 </div>
@@ -25,18 +31,22 @@
                     <a href="index.html">
                         <img src="./imagenes/logo.png" alt="Isologotipo de la marca Funkoshop">
                     </a>
-                </picture>
+                </picture-->
                 <ul class="navbar__menu">
+                    <!----div class="video">
+                        <img src="./imagenes/logo2.png" alt="">
+                    </div---->
+                    
                 
-                  <li class="navbar__item with-submenu">
-                     <a class="navbar__link with-icon" href="#">Inicio</a>
-                  </li>
-                  <li class="navbar__item">
-                     <a class="navbar__link" href="#">Tramites</a> 
-                  </li>
-                  <li class="navbar__item">
-                     <a class="navbar__link" href=".#">Contacto</a>
-                  </li>
+                    <li class="navbar__item with-submenu">
+                      <a class="navbar__link with-icon" href="#">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">Tramites</a> 
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href=".#">Contacto</a>
+                    </li>
               </ul>
             </nav>
            
@@ -46,7 +56,7 @@
 
         <div class="div1">
             <div class="card">
-                <img class="icon" src="./imagenes/idcard-line (1).svg" alt="icon">
+                <img class="icon" src="./imagenes/idcard-line.svg" alt="icon">
                 <h2 class="category">Licencia Nacional de Conducir</h2>
                 <p class="description">
                     Conoce los requisitos para obtener la Licencia Nacional de Conducir
@@ -54,7 +64,7 @@
             </div>
 
             <div class="card">
-                <img class="icon" src="./imagenes/jeep-line.svg" alt="icon">
+                <img class="icon" src="./imagenes/car-3-line.svg" alt="icon">
                 <h2 class="category">Requisitos para circular</h2>
                 <p class="description">
                     Conoce los requisitos para circular de todo el pais
@@ -62,7 +72,7 @@
             </div>
 
             <div class="card">
-                <img class="icon" src="./imagenes/location-2-line.svg" alt="icon">
+                <img class="icon" src="./imagenes/location.svg" alt="icon">
                 <h2 class="category">Conoce La Plata</h2>
                 <p class="description">
                     Conoce los requisitos para circular en la ciudad de la plata
@@ -70,7 +80,7 @@
             </div>
 
             <div class="card">
-                <img class="icon" src="./imagenes/baby-line (1).svg" alt="icon">
+                <img class="icon" src="./imagenes/baby-line.svg" alt="icon">
                     <h2 class="category">¿Viajas con Menores de 10 años ? </h2>
                 <p class="description">
                     Los menores de 10 años viajan con sillitas , conoce mas.. 
@@ -78,7 +88,7 @@
             </div>
 
             <div class="card">
-                <img class="icon" src="./imagenes/mailbox-line.svg" alt="icon">
+                <img class="icon" src="./imagenes/whatsapp-line.svg" alt="icon">
                 <h2 class="category">Necesitas mas Información?</h2>
                 <p class="description">
                     Contactanos si necesitas mas info acerca de seguridad vial
@@ -88,24 +98,29 @@
 
         <!---------Inicio informacion ---------->
 
-        <div class="informacion">
+        <div class="informacion container">
             <div class="informacion-content">
-                <img class="informacion-img" src="./imagenes/Licencia-conducir-carnet-1200x800.jpg" alt="">
+                <img class="informacion-imgen" src="./imagenes/Licencia-conducir-carnet-1200x800.jpg" alt="">
                 <h2 class="informacion-title">Mi Primera Licencia</h2>
             </div>
             <div class="informacion-content">
-                <img class="informacion-img" src="./imagenes/historias.jpg" alt="">
+                <img class="informacion-imgen" src="./imagenes/historias.jpg" alt="">
                 <h2 class="informacion-title">Historias de Alcohol al Volante</h2>
             </div>
-            
+            <div class="informacion-content">
+                <img class="informacion-imgen" src="./imagenes/Screenshot_20231002_231123_Chrome.jpg" alt="">
+                <h2 class="informacion-title">Campañas de Preventivas</h2>
+            </div>
         </div>
 
         <!-------------INFORMACION UTIL----------------->
         <h3 class="title">Información Útil</h3>
         <div class="informacion-util">
-            <div class="informacion-conte">
+            <div class="informacion-conte container">
                 <img class="informacion-img" src="./imagenes/motos1104.jpg" alt="">
-                <h2 class="informacion-title">Formulario Digital Motocicletas 0KM - Seguro Obligatorio</h2>
+                <div class="info">
+                    <h2 class="informacion-title">Formulario Digital Motocicletas 0KM - Seguro Obligatorio</h2>
+                </div>
             </div>
             <div class="informacion-conte">
                 <img class="informacion-img" src="./imagenes/patentes.jpg" alt="">
@@ -163,21 +178,25 @@
         </div>
 
      <!---------------iNICIO FOOTER --------------------->
-        <footer>
-
-            <ul>
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-                <li>
-                    <a href="#">Dejanos tu CV</a>
-                </li>
-            </ul>
+        <footer >
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                       <a href="#">Contacto</a>
+                    </li>
+                    <li>
+                       <a href="#">Dejanos tu CV</a>
+                    </li>
+                </ul>
+                <div class="logo-footer">
+                    <img src="./imagenes/logo.png" alt="">
+                 </div>
+            </div>    
         </footer>
 
-        <iconify-icon icon="mdi:home"></iconify-icon>
+        
     </body>
 </html>
