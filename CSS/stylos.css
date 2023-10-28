@@ -287,7 +287,7 @@ header{
 
 .informacion-imgen{
     display: flex;
-    width: 690px;
+    width: 100%;
     height: 190px;
     border-radius: 10px;
 }
@@ -315,14 +315,14 @@ header{
 
 .informacion-img{
     display: flex;
-    width: 600px;
+    width: 100%;
     height: 190px;
     border-radius: 10px;
 }
 
 .informacion-conte{
    
-    width: 600px;
+    width: 90%;
     height: 257px;
     border-radius: 10px;
     background: rgba(250, 250, 255, 1);
@@ -337,7 +337,7 @@ header{
 }
 
 .servicios-content{
-    width: 600px;
+    width: 90%;
     height: 210px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
