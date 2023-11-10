@@ -153,8 +153,8 @@ header{
 
 .card{
     float: left;
-    width: 280px;
-    height: 305px;
+    width: 20%;
+    height: 50%;
     border: 3px solid gray;
     box-shadow: 1px 1px 2px #ddd;
     background: white;
