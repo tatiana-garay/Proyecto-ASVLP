@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/form.css">
+        <title>ASVLP</title>
+        <link rel="icon" href="../imagenes/logo.png">
+        
+        
+    </head>
+    <body>
+        <!----------Inicio banner----------->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="../imagenes/logo.png" alt="">
+                </div>
+                <ul class="navbar__menu">                    
+                    <li class="navbar__item with-submenu">
+                      <a class="navbar__link with-icon" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">Tramites</a> 
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="formulario.html">Contacto</a>
+                    </li>
+              </ul>
+            </nav>
+           
+        </header>
+        <!--------------Fin banner ---------------------->
+
+        <div class="contact_form">
+            <div class="formulario">
+                <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                <form action="submeter-formulario.php" method="post">				
+                    <p>
+                        <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+                                
+                    <p>
+                        <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                            
+                    <p>
+                        <label for="telefone" type="number" class="colocar_telefono">Teléfono</label>
+                        <input type="number" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>				
+                                
+                    <p>
+                        <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    </p>		
+                                
+                    <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>                     
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                    </p>	  								
+                                
+                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+    
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>					
+                            
+                </form>
+            </div>	
+        </div>
+
+
+        <!---------------iNICIO FOOTER --------------------->
+        <footer >
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                       <a href="formulario.html">Contacto</a>
+                    </li>
+                    <li>
+                       <a href="#">Dejanos tu CV</a>
+                    </li>
+                </ul>
+                <div class="logo-footer">
+                    <img src="../imagenes/logo.png" alt="">
+                 </div>
+            </div>    
+        </footer>
+    </body>

@@ -93,30 +93,13 @@ video{
 
 /*---------------INICIO HEADER-----------------------*/
 
-/*.video {
-    /** Simulationg background-size: cover 
-    display: flex;
-    height: 20%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-attachment: fixed;
-    overflow: hidden;
-    
-    
-  } */
-
 header{
         background-image: url(../imagenes/e4167885-bb41-4799-ac38-0a11704109e0.png);
         min-width: 1024px;
         width: 100%;
         height: 150px;
         margin: 0px auto;
-        overflow: hidden;
-    
-   
-    
+        overflow: hidden;    
 }
 
 
