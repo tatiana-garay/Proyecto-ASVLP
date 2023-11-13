@@ -75,8 +75,8 @@ body{
 
 
 .banner img{
-    width: 100%;
-    height: 160px;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -85,19 +85,15 @@ ul, ol{
     list-style-type: none;
 }
 
-video{
-    width: 100%;
-}
-
 /*-----------fIN DE ESTILOS GENERALES ------------*/
 
 /*---------------INICIO HEADER-----------------------*/
 
 header{
         background-image: url(../imagenes/e4167885-bb41-4799-ac38-0a11704109e0.png);
-        min-width: 1024px;
+        min-width: 685px;
         width: 100%;
-        height: 150px;
+        height: 20%;
         margin: 0px auto;
         overflow: hidden;    
 }
@@ -146,7 +142,7 @@ header{
     display: flex;
     position: relative;
     
-    gap: 20px;
+    gap: 2%;
 }
 
 
@@ -205,6 +201,7 @@ header{
     text-align: center;
     color: #1D84B5;
     transition: all 300ms;
+    overflow: hidden;
 }
 
 .card:hover .category{
@@ -299,18 +296,18 @@ header{
 .informacion-img{
     display: flex;
     width: 100%;
-    height: 190px;
+    height: 50%;
     border-radius: 10px;
 }
 
 .informacion-conte{
    
     width: 90%;
-    height: 257px;
+    height: 70%;
     border-radius: 10px;
     background: rgba(250, 250, 255, 1);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    margin: 30px
+    margin: 1%;
 }
 
 /*--------SERVICIOS-------------*/
@@ -321,18 +318,19 @@ header{
 
 .servicios-content{
     width: 90%;
-    height: 210px;
+    height: 50%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin: 30px;
+    margin: 20px;
+    gap: 0;
     
 }
 
 .icon-servicios{
     
     width: 100%;
-    height: 130px;
-    font-size: 50px;
+    height: 50%;
+    font-size: 30px;
     line-height: 110px;
     text-align: center;
     margin: 0px auto;
@@ -351,9 +349,9 @@ header{
 /*----------footeer ----------------*/
 footer{
     background-image: url(../imagenes/e4167885-bb41-4799-ac38-0a11704109e0.png);
-    min-width: 1024px;
+    min-width: 640px;
     width: 100%;
-    height: 200px;
+    height: 40%;
     margin: 0px auto;
     overflow: hidden;
 }

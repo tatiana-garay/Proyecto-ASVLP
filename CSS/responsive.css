@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+        left: 10px;
+    }
+
+    .navbar__menu{
+        gap: 0%;
+    }
+    .img-logo{
+        height: 5%;
+    }
+    .div1{
+        width: 140%;
+        margin-left: 10%;
+    }
+    .card .category{
+        font-size: 15px;
+    }
+    .card .description{
+        font-size: 15px;
+    }
+    .informacion-content{
+        margin-left: 70%;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .informacion-util{
+        width: 160%;
+    }
+    .informacion-conte{
+        margin-left: 10%;
+    }
+    .servicios{
+        gap: 10%;
+    }
+    .servicios-content{
+        width: 130%;
+    }
+    .footer{
+        width: 100%;
+    }
+}
