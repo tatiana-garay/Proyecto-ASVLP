@@ -95,9 +95,9 @@ video{
 
 header{
         background-image: url(../imagenes/e4167885-bb41-4799-ac38-0a11704109e0.png);
-        min-width: 1024px;
+        min-width: 683px;
         width: 100%;
-        height: 150px;
+        height: 20%;
         margin: 0px auto;
         overflow: hidden;    
 }
@@ -276,7 +276,7 @@ p{
 /*----------footeer ----------------*/
 footer{
     background-image: url(../imagenes/e4167885-bb41-4799-ac38-0a11704109e0.png);
-    min-width: 1024px;
+    min-width: 683px;
     width: 100%;
     height: 200px;
     margin: 0px auto;
