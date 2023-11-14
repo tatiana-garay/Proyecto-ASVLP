@@ -290,6 +290,7 @@ header{
 .informacion-util{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
 }
 
 
@@ -307,7 +308,7 @@ header{
     border-radius: 10px;
     background: rgba(250, 250, 255, 1);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    margin: 1%;
+    margin: auto;
 }
 
 /*--------SERVICIOS-------------*/
@@ -349,7 +350,7 @@ header{
 /*----------footeer ----------------*/
 footer{
     background-image: url(../imagenes/e4167885-bb41-4799-ac38-0a11704109e0.png);
-    min-width: 640px;
+    min-width: 683px;
     width: 100%;
     height: 40%;
     margin: 0px auto;
